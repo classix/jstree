@@ -235,7 +235,8 @@ module.exports = function(grunt) {
   grunt.util.linefeed = "\n";
 
   // Default task.
-  grunt.registerTask('default', ['jshint:beforeconcat','concat','amd','jshint:afterconcat','copy:libs','uglify','less','imagemin','replace','copy:docs','qunit','resemble','dox']);
+  grunt.registerTask('default', ['jshint:beforeconcat','concat','amd','jshint:afterconcat','copy:libs','uglify','less','imagemin','replace','copy:docs','qunit']);
+  grunt.registerTask('old_default', ['jshint:beforeconcat','concat','amd','jshint:afterconcat','copy:libs','uglify','less','imagemin','replace','copy:docs','qunit','resemble','dox']);
   grunt.registerTask('js', ['concat','amd','uglify']);
   grunt.registerTask('css', ['copy','less']);
 
