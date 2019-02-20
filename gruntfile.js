@@ -96,6 +96,7 @@ module.exports = function(grunt) {
         },
         files: {
           "dist/themes/default/style.min.css" : "src/themes/default/style.less",
+          "dist/themes/default/style_high_contrast.min.css" : "src/themes/default/style_high_contrast.less",
           "dist/themes/default-dark/style.min.css" : "src/themes/default-dark/style.less"
         }
       },
@@ -103,6 +104,8 @@ module.exports = function(grunt) {
         files: {
           "src/themes/default/style.css" : "src/themes/default/style.less",
           "dist/themes/default/style.css" : "src/themes/default/style.less",
+          "src/themes/default/style_high_contrast.css" : "src/themes/default/style_high_contrast.less",
+          "dist/themes/default/style_high_contrast.css" : "src/themes/default/style_high_contrast.less",
           "src/themes/default-dark/style.css" : "src/themes/default-dark/style.less",
           "dist/themes/default-dark/style.css" : "src/themes/default-dark/style.less"
         }
